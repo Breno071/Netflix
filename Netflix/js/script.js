@@ -1,6 +1,6 @@
 let legends = document.querySelectorAll(".descricoes")
 let legendas = Array.from(legends)
-let imgs = document.querySelectorAll(".section_filmes section")
+let imgs = document.querySelectorAll(".imagens")
 let imagens = Array.from(imgs)
 
 legendas[0].classList.add("filme_ativo")
@@ -16,12 +16,12 @@ function TempoLegendas(){
       if (i > 0) {
         legendas[i - 1].classList.remove("filme_ativo")
       }
-    },5000 * i) 
+    },10000 * i) 
   })
 }
 
 
-setInterval(TempoLegendas, 75000)
+setInterval(TempoLegendas, 150000)
 
 TempoImagens()
 
@@ -33,9 +33,9 @@ function TempoImagens(){
       if (i > 0) {
         imagens[i - 1].classList.remove("ativo")
       }
-    },5000 * i) 
+    },10000 * i) 
   })
 }
 
 
-setInterval(TempoImagens, 75000)
+setInterval(TempoImagens, 150000)

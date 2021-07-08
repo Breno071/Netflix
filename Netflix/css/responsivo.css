@@ -1,0 +1,130 @@
+/*Estilo para tablets*/
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  body {
+    font-size: 10px;
+  }
+
+  .section_filmes {
+    height: 38rem;
+  }
+
+  .nav ul li {
+    padding: 5px 5px;
+  }
+
+  .ativo {
+    text-align: center;
+    background-size: 73rem;
+    overflow: auto;
+    background-repeat: no-repeat;
+  }
+
+  .filme_ativo .titulo_filme {
+    font-size: 4em;
+  }
+
+  .filme_ativo .subtitulo_filme {
+    display: block;
+    opacity: 1;
+    margin-top: 0;
+    margin-left: 45px;
+    color: white;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", serif;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .filme_ativo .descricao {
+    display: block;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    width: 400px;
+    margin-left: 40px;
+    font-size: 0.8rem;
+  }
+
+  .filme_ativo .btn {
+    margin: 20px 10px 0 80px;
+    height: 2rem;
+    font-size: 12px;
+    background-color: white;
+  }
+
+  .filme_ativo .btn-preto {
+    font-size: 12px;
+    height: 2rem;
+  }
+
+  .textos {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Final do estilo para tablets */
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 787px) {
+  /* Final do estilo para smartphone */
+
+  body {
+    font-size: 10px;
+    height: auto;
+  }
+
+  .section_filmes {
+    height: 31rem;
+  }
+
+  .nav ul {
+    width: 50%;
+  }
+
+  .nav ul li {
+    padding: 10px 2px;
+    margin: 0;
+  }
+
+  .ativo {
+    margin-left: -300px;
+    text-align: center;
+    background-size: 100%;
+    background-size: 65rem;
+    overflow: auto;
+    background-repeat: no-repeat;
+  }
+
+  .filme_ativo {
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  .filme_ativo .titulo_filme {
+    font-size: 3.5em;
+  }
+
+  .filme_ativo .subtitulo_filme {
+    display: block;
+    font-size: 0.9rem;
+  }
+
+  .filme_ativo .descricao {
+    display: none;
+  }
+
+  .filme_ativo .btn {
+    margin: 20px 10px 0 80px;
+    height: 2rem;
+    font-size: 12px;
+    background-color: white;
+  }
+
+  .filme_ativo .btn-preto {
+    font-size: 12px;
+    height: 2rem;
+  }
+
+  .textos {
+    margin: 50px 0 0 -40px;
+  }
+}

@@ -1,6 +1,8 @@
 body {
   background-color: black;
-  height: 1000px;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
 }
 
 .filme1 {
@@ -116,7 +118,7 @@ body {
 
 .filme15 {
   display: none;
-  height: 700px;
+  height: 60rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),
     url(https://coletivonerd.com.br/wp-content/uploads/2019/10/A-Luz-no-Fim-do-Mundo-1.jpg);
   background-size: cover;
@@ -124,13 +126,24 @@ body {
 
 .section_filmes {
   display: block;
+  height: 40rem;
+  width: 100%;
 }
 
 .section_filmes .ativo {
-  height: 700px;
+  height: 50rem;
   display: block;
   animation-duration: 3s;
   animation-name: aparecer;
+}
+
+.ativo {
+  margin: 0;
+  text-align: center;
+  background-size: 100%;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -146,7 +159,14 @@ body {
 
 .textos {
   display: block;
-  height: 520px;
+  height: 60%;
+  width: 70%;
+  margin: 0;
+}
+
+.descricoes .ativo {
+  width: 80%;
+  height: 90%;
 }
 
 .titulo_filme {
@@ -158,7 +178,7 @@ body {
   padding-top: 80px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", serif;
   text-align: center;
-  font-size: 70px;
+  font-size: 5rem;
 }
 
 .subtitulo_filme {
@@ -185,8 +205,8 @@ body {
   width: 150px;
   font-weight: bold;
   display: none;
-  margin: 20px 10px 0 100px;
-  height: 40px;
+  margin: 2rem 1rem 0 30rem;
+  height: 4rem;
 }
 
 .btn-preto {
@@ -230,21 +250,21 @@ body {
 .filme_ativo .filmes {
   display: block;
   opacity: 1;
-  width: 500px;
+  width: 30rem;
   margin-inline-start: 5px;
   margin-bottom: 50px;
 }
 
 .filme_ativo .titulo_filme {
-  padding-top: 30px;
-  width: 500px;
+  padding-top: 2rem;
+  width: 30rem;
   display: block;
   opacity: 1;
   margin: -550px 40px 0 0;
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", serif;
   text-align: center;
-  font-size: 70px;
+  font-size: 3rem;
 }
 
 .filme_ativo .subtitulo_filme {
@@ -255,6 +275,7 @@ body {
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", serif;
   text-align: center;
+  font-size: 2rem;
 }
 
 .filme_ativo .descricao {
@@ -264,23 +285,23 @@ body {
   text-align: center;
   width: 400px;
   margin-left: 40px;
+  font-size: 0.8rem;
 }
 
 .filme_ativo .btn {
   color: black;
   background-color: white;
-  width: 150px;
+  width: 10rem;
   font-weight: bold;
   display: block;
   margin: 20px 10px 0 100px;
-  height: 40px;
+  height: 3rem;
 }
 
 .filme_ativo .btn:hover {
   color: #ffffff;
   background-color: rgb(53, 52, 52);
   text-decoration: none;
-  height: 40px;
 }
 
 .filme_ativo .btn-preto {
@@ -289,7 +310,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   text-align: center;
-  height: 40px;
+  height: 3rem;
   padding: 6px 12px;
   margin: 20px 10px;
   border: 1px solid;
@@ -301,10 +322,11 @@ body {
   user-select: none;
   background-color: black;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  width: 10rem;
 }
 
 .filme_ativo .btn-preto:hover {
@@ -313,25 +335,39 @@ body {
 }
 
 .netflix_logo {
-  padding: 20px 40px;
+  padding: 7.5%;
   display: block;
-  height: 80px;
+  height: 100%;
+  width: 100%;
 }
 
 .nav {
   background-color: black;
   position: fixed;
-  margin: 0 auto;
-  height: 70px;
+  margin: auto;
+  height: 9%;
   z-index: 2;
+}
+
+.nav a {
+  height: 100%;
+  width: 150px;
+}
+
+.nav ul {
+  height: 100%;
+  padding: 5px;
+  margin: auto 10px;
+  width: 60%;
+  text-align: left;
 }
 
 .nav ul li {
   color: white;
   list-style-type: none;
   display: inline-block;
-  padding: 15px 10px;
-  margin: 10px auto;
+  padding: 1rem 1rem 1rem 0;
+  font-size: 1rem;
   font-weight: bold;
   font-family: Helvetica;
 }
@@ -376,18 +412,12 @@ body {
   cursor: pointer;
   margin: 0;
   position: relative;
-  height: 400px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
 }
 
 .item {
   padding-right: 10px;
-  transition: 0.5s;
-}
-
-.item:hover {
-  margin-right: 20px;
-  transform: scale(1.1);
 }
 
 .carrocel {
@@ -402,7 +432,7 @@ body {
   text-align: center;
   z-index: 1;
   opacity: 0;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .carrocel:hover {
